@@ -7,6 +7,7 @@ class User < ApplicationRecord
   :jwt_authenticatable, jwt_revocation_strategy: self
 
   has_many :categories
+  has_many :items
 
   def jwt_payload
     super.merge('foo' => 'bar')

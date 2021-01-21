@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+user = User.first
+
+category = user.categories.find_or_create_by(title: "Home", description:"things around my house")
+
+
+item1 = category.items.find_or_create_by(name: "Dishes", quantity: 30, color: "white", details: "I bought recently", user_id: user.id)
+item2 = category.items.find_or_create_by(name: "Coffee Mugs", quantity: 10, color: "5 whites and 5 blacks", details: "Used in good conditions", user_id: user.id)
+item3 = category.items.find_or_create_by(name: "pan", quantity: 10, color: "black", details: "new", user_id: user.id)
+
+item1 = category.items.find_or_create_by(name: "Bed", quantity: 1, color: "white", details: "In good condition", user_id: user.id)
+item2 = category.items.find_or_create_by(name: "Table", quantity: 1, color: "Black", details: "This is where I charge my phone", user_id: user.id)
+item3 = category.items.find_or_create_by(name: "pillow", quantity: 1, color: "White", details: "My favorite pillow", user_id: user.id)

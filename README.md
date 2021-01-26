@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Inventory app ruby on rails api backend Portfolio Project
 
-Things you may want to cover:
+Inventory-Tracker
 
-* Ruby version
+Introduction:
 
-* System dependencies
+This is a personal tool for keeping track of the things you have and where you keep them. It uses the Rails framework as an api and JavaScript as the frontend. The application uses postgresql for the database to store items you'd like to track.
 
-* Configuration
+Running the app:
 
-* Database creation
+1. fork and clone this repo.
 
-* Database initialization
+2. cd into inventory-backend-api
 
-* How to run the test suite
+3. in the terminal, run bundle install to install all required gems
 
-* Services (job queues, cache servers, search engines, etc.)
+4. run the command "rails s" to start the app server
 
-* Deployment instructions
+5. visit localhost:3000 to have the server running.
 
-* ...
+6. visit https://github.com/jreyes8631/inventory_frontend for additional instructons for the frontend.

@@ -20,7 +20,7 @@ class ItemsController < ApplicationController
     if @item.save
       render json: @item, status: :created, location: @item
     else
-      render json: @item.errors, status: :unprocessable_entity
+      render json: @item.errors.full_messages.to_sentence, status: :unprocessable_entity
     end
   end
 

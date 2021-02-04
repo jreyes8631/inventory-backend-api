@@ -7,7 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 user = User.first
 
+new_user = User.create(email:"test@test.com", password:"password1")
+
 category = user.categories.find_or_create_by(title: "Home", description:"things around my house")
+category2 = user.categories.find_or_create_by(title: "Work", description:"things around my office")
 
 
 item1 = category.items.find_or_create_by(name: "Dishes", quantity: 30, color: "white", details: "I bought recently", user_id: user.id)
